@@ -52,3 +52,13 @@ Criando a partir de outro projeto
 '''
 dotnet ef --startup-project ../ProAgil.API comando
 '''
+### Instalando o angular
+'''
+npm install -g @angular/cli
+ng new ProAgil-App
+
+ng serve -o
+'''
+
+### Instalando Bootstrap e fontawesome-free
+npm i  --save bootstrap @fortawesome/fontawesome-free
