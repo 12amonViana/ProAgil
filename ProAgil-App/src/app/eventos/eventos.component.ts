@@ -10,13 +10,14 @@ import { tick } from '@angular/core/testing';
 export class EventosComponent implements OnInit {
 
   _filtroLista: string;
+
   get filtroLista(): string {
     return this._filtroLista;
   }
-set filtroLista(value: string) {
+  set filtroLista(value: string) {
   this._filtroLista = value;
   this.eventosFiltrados = this.filtroLista ? this.filtrarEventos(this.filtroLista) : this.eventos;
-}
+  }
 
   eventosFiltrados: any = [];
   eventos: any = [];
@@ -44,6 +45,7 @@ set filtroLista(value: string) {
   getEventos() {
     this.http.get( 'http://localhost:5000/api/values').subscribe(response => {
       this.eventos = response;
+      this.eventosFiltrados = this.eventos;
       console.log(response);
     }, error => {
       console.log(error);
