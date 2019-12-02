@@ -83,3 +83,6 @@ $ dotnet ef --startup-project ../ProAgil.WebAPI migrations add init
 
 ### Atualizando o banco de dados com migrations 
 $ dotnet ef --startup-project ../ProAgil.WebAPI database update
+
+### ngx-bootstrap
+https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
